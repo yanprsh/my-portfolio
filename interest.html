@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      text-decoration: none;
+      list-style: none;
+    }
+    body {
+      background-color: snow;
+      color: black;
+    }
+    
+     header {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      right: 0;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem 8rem;
+    }
+      
+    .logo {
+      color: black;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+    .navmenu {
+      display: flex;
+    }
+    .navmenu a {
+      display: inline-block;
+      margin: 0 1.5rem;
+      color: black;
+      font-weight: 500;
+      transition: all 0.6s;
+    }
+    .navmenu a:hover {
+      transform: translateY(-5px);
+    }
+    .home {
+      width: 100%;
+      height: 100vh;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      padding: 2rem 5rem 0 18rem;
+      column-gap: 1rem;
+    }
+    .home-img img {
+      width: 100%;
+      height: auto;
+    }
+    .home-text h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .home-text h3 {
+      position: relative;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+    
+      .home-text p {
+      margin-bottom: 2rem;
+    }
+     
+    .home-2{
+      max-width: 800px;
+      margin: 0 auto;
+      text-align:center;
+      }
+      
+    footer { 
+    color: black; 
+    text-align: center; 
+    padding: 2rem 0; 
+    font-size: 0.9rem;  
+    width: 100%;
+    bottom: 0;
+    z-index: 999; 
+    margin-top: 5rem;
+    
+   }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">Yanprsh</a>
+      <ul class="navmenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="interest.html">Interest</a></li>
+        <li><a href="achievement.html">Achievement</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </header>
+
+    <section class="home">
+      <div class="home-text">
+        <h2>Personal Interests</h2>
+        <h3>Designing</h3>
+        <p>I love bringing ideas to life through design - whether its graphics, illustrations, or just experimenting with new styles </p>
+        <h3>Reading</h3>
+        <p>My favourite genres are magical realism and fantasy. I usually read e-Book but still prefer it in printed version</p>
+        <h3>Films</h3>
+        <p>Movies are my escape. I enjoy everything from the latest blockbusters to indie gems</p>
+        <h3>Thrifting</h3>
+        <p>Im a huge fan of thrifting! Whether if its finding unique clothes or cool vintage items</p>
+        
+      </div>
+      <div class="home-img">
+        <img src="interest.png" />
+      </div>
+    </section>
+      
+    <section class="home-2">
+      <div class="home-text">
+        <h2>Current Favourites </h2>
+        <h3>Films - Fantastic Mr.Fox by Wes Anderson</h3>
+        <h3>Books - The Silent Patient by Alex Michaelides</h3>
+        <h3>Food - Plain Vanilla Freshcream Cake </h3>
+        <h3>Creator - Gawx Art (Youtuber)</h3>
+      </div>
+     
+    </section>
+
+    <footer>
+  <p>&copy; 2024 Yanprsh.</p>
+</footer>
+      
+  </body>
+</html>
