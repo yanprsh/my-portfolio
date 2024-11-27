@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      text-decoration: none;
+      list-style: none;
+    }
+    body {
+      background-color: snow;
+      color: black;
+    }
+    header {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      right: 0;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem 8rem;
+    }
+    .logo {
+      color: black;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+    .navmenu {
+      display: flex;
+    }
+    .navmenu a {
+      display: inline-block;
+      margin: 0 1.5rem;
+      color: black;
+      font-weight: 500;
+      transition: all 0.6s;
+    }
+    .navmenu a:hover {
+      transform: translateY(-5px);
+    }
+    .home {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex direction: column;
+      text-align:center;
+      height: 100vh;
+      padding: 1rem;
+    }
+    .home-img img {
+      max-width: 800px; 
+      height: auto;
+      margin-bottom: 1rem;
+    }
+      
+    .home-text{
+      max-width: 800px;
+      margin: 0 auto;
+      text-align:center;
+      }
+      
+    .home-text h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      
+    }
+    .home-text h3 {
+      position: relative;
+      padding-left: 6rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+    
+    .home-text p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    }
+      
+    footer { 
+    color: black; 
+    text-align: center; 
+    padding: 1rem 0; 
+    font-size: 0.9rem;  
+    width: 100%;
+    bottom: 0;
+    margin-top: 5rem;
+    z-index: 999; 
+    
+   }
+    
+    .tmi {
+    display: flex;
+    align-items: center;
+    flex-wrap:wrap;
+   }
+    .gif-style{
+    text-align: center;
+    margin: 2rem auto;
+   }
+    
+    .gif-image {
+    width: 300px;
+    height: auto;
+      }
+      
+    .heading {
+    font-size: 24px;
+    color: black;
+    margin-bottom: 1rem;
+    }
+  
+    .paragraph {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 0 1rem;
+    font-size:16px;
+    color: black;
+    width: 100%;
+   }  
+      
+</style>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">Yanprsh</a>
+      <ul class="navmenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="interest.html">Interest</a></li>
+        <li><a href="achievement.html">Achievement</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </header>
+
+    <section class="home">
+      <div class= "home-content">
+        <div class="home-img">
+          <img src="card.png" alt="Profile Image" /> </div></div>
+    </section>
+        
+    <section>
+      <div class="home-text">
+        <h2>Hi! My name is Izyan Farhana </h2>
+        <h3>Information Management Student, UiTM Sarawak</h3>
+        <p>I am from Kuching, Sarawak. Currently studying Diploma in Information Management. This is my last 
+          semester and I hope to further my studies in Degree soon </p>
+      </div>
+    </section>
+      
+    <section>
+      <div class="gif-style">
+         <img src="tmi.gif" alt="Too much Information" class="gif-image" />
+         <h2 class="heading"> How I got my Username</h2>
+         <p class="paragraph"> It was during my primary school when I need to change my WeChat Username. A few days back, I watched new
+          movie at the cinema. It was The Fifth Wave. In the movie, there is a male character named Ben Parish. So, I took
+          his last name and shortened it to Prsh. Until now, I used the username Yanprsh for most of my social platforms.</p>
+        </div>
+    </section>
+    
+  <footer>
+  <p>&copy; 2024 Yanprsh.</p>
+</footer>
+
+  </body>
+</html>
