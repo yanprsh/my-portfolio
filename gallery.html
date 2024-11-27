@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      text-decoration: none;
+      list-style: none;
+    }
+    body {
+      background-color: snow;
+      color: black;
+    }
+    header {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      right: 0;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem 8rem;
+    }
+    .logo {
+      color: black;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+    .navmenu {
+      display: flex;
+    }
+    .navmenu a {
+      display: inline-block;
+      margin: 0 1.5rem;
+      color: black;
+      font-weight: 500;
+      transition: all 0.6s;
+    }
+    .navmenu a:hover {
+      transform: translateY(-5px);
+    }
+    .home {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex direction: column;
+      text-align:center;
+      height: 100vh;
+      padding: 1rem;
+    }
+    .home-img img {
+      max-width: 500px; 
+      height: auto;
+      margin-bottom: 2rem;
+    }
+
+    .home-text p {
+      margin-bottom: 2rem;
+    }
+    .gallery {
+  padding: 2rem 8rem; 
+  text-align: center;
+}
+
+.gallery-photo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem; 
+}
+
+.gallery-photo img {
+  width: 100%; 
+  height: auto; 
+  transition: transform 0.3s; 
+}
+
+.gallery-photo img:hover {
+  transform: scale(1.05); 
+  
+}
+    
+ footer { 
+    color: black; 
+    text-align: center; 
+    padding: 1rem 0; 
+    font-size: 0.9rem;  
+    width: 100%;
+    bottom: 0;
+    z-index: 999; 
+    
+   }
+
+</style>
+  </head>
+  <body>
+      
+    <header>
+      <a href="index.html" class="logo">Yanprsh</a>
+      <ul class="navmenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="interest.html">Interest</a></li>
+        <li><a href="achievement.html">Achievement</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+      </header>
+      
+<section class="home">
+      <div class= "home-content">
+        <div class="home-img">
+          <img src="gallery.png" alt="Profile Image" /> </div></div>
+    <div class="home-text">
+    <p> Throughout my life, I have encountered many individuals who have significantly influenced me, and I deeply value their impact on my journey.</p></div>
+    </section>
+
+<section class="gallery">
+  <div class="gallery-photo">
+    <img src="2.png" alt="Image 1" />
+    <img src="3.png" alt="Image 2" />
+    <img src="4.png" alt="Image 3" />
+    <img src="5.png" alt="Image 4" />
+    <img src="6.png" alt="Image 5" />
+    <img src="7.png" alt="Image 6" />
+    <img src="8.png" alt="Image 7" />
+    <img src="9.png" alt="Image 8" />
+    <img src="10.png" alt="Image 9" />
+    <img src="11.png" alt="Image 10" />
+    <img src="12.png" alt="Image 11" />
+    <img src="13.png" alt="Image 12" />
+    <img src="14.png" alt="Image 13" />
+    <img src="15.png" alt="Image 14" />
+    <img src="16.png" alt="Image 15" />
+  </div>
+</section>
+      
+<footer>
+  <p>&copy; 2024 Yanprsh.</p>
+</footer>
+      
+  </body>
+</html>
