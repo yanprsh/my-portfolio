@@ -135,6 +135,75 @@
       color: black; 
     }
       
+     .teaser {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 2rem 5rem;
+  text-align: center;
+}
+
+.teaser-item {
+  background-color: snow;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.teaser-item img.teaser-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.teaser-item h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.teaser-item p {
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.teaser-item .btn {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.9rem;
+}
+
+.teaser-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+    
+#backToTop {
+      display: inline-block; 
+      position: relative;
+      margin: 10px auto;
+      left: 1300px;
+      color: black;
+      border-radius: 20px;
+      padding: 10px 15px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      transition: opacity 0.3s;
+    }
+
+    body:has(:is(section, div, p):nth-of-type(n+3):in-viewport) #backToTop {
+      display: block;
+    }
+    
+    #backToTop:hover {
+      background-color: lavenderblush;
+    }
+      
     footer { 
     color: black; 
     text-align: center; 
@@ -175,6 +244,35 @@
       </div>
     </div>
   </section>
+    
+  <section class="teaser">
+  <div class="teaser-item">
+    <img src="home1.png" alt="Profile" class="teaser-image" />
+    <h3>Profile</h3>
+    <p>Get to know more about me and my background</p>
+    <a href="profile.html" class="btn">Explore</a>
+  </div>
+  <div class="teaser-item">
+    <img src="home2.png" alt="Achievements" class="teaser-image" />
+    <h3>Achievements</h3>
+    <p>Discover my education journey and achievements.</p>
+    <a href="achievement.html" class="btn">Explore</a>
+  </div>
+  <div class="teaser-item">
+    <img src="home3.png" alt="Interests" class="teaser-image" />
+    <h3>Interests</h3>
+    <p>Dive into my hobbies, passions, and favorite activities.</p>
+    <a href="interest.html" class="btn">Explore</a>
+  </div>
+  <div class="teaser-item">
+    <img src="home4.png" alt="Portfolio" class="teaser-image" />
+    <h3>Portfolio</h3>
+    <p>Take a look at some my skills and work experiences.</p>
+    <a href="portfolio.html" class="btn">Explore</a>
+  </div>
+</section>
+
+<a href="#top" id="backToTop">Back to Top</a>
     
 <footer>
   <p>&copy; 2024 Yanprsh.</p>
