@@ -131,7 +131,31 @@
     width: 100%;
    }  
       
+    #backToTop {
+      display: inline-block; 
+      position: relative;
+      margin: 10px auto;
+      left: 1300px;
+      color: black;
+      border-radius: 20px;
+      padding: 10px 15px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      transition: opacity 0.3s;
+    }
+
+    body:has(:is(section, div, p):nth-of-type(n+3):in-viewport) #backToTop {
+      display: block;
+    }
+    
+    #backToTop:hover {
+      background-color: lavenderblush;
+    }
+         
 </style>
+    
   </head>
   <body>
     <header>
@@ -139,8 +163,8 @@
       <ul class="navmenu">
         <li><a href="index.html">Home</a></li>
         <li><a href="profile.html">Profile</a></li>
-        <li><a href="interest.html">Interest</a></li>
         <li><a href="achievement.html">Achievement</a></li>
+        <li><a href="interest.html">Interest</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="gallery.html">Gallery</a></li>
       </ul>
@@ -165,12 +189,14 @@
       <div class="gif-style">
          <img src="tmi.gif" alt="Too much Information" class="gif-image" />
          <h2 class="heading"> How I got my Username</h2>
-         <p class="paragraph"> It was during my primary school when I need to change my WeChat Username. A few days back, I watched new
+         <p class="paragraph"> It was during my primary school when I need to change my WeChat Username. A few days back, I watched a new
           movie at the cinema. It was The Fifth Wave. In the movie, there is a male character named Ben Parish. So, I took
           his last name and shortened it to Prsh. Until now, I used the username Yanprsh for most of my social platforms.</p>
         </div>
     </section>
     
+    <a href="#top" id="backToTop">Back to Top</a>
+      
   <footer>
   <p>&copy; 2024 Yanprsh.</p>
 </footer>
