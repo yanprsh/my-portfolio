@@ -85,6 +85,96 @@
       margin-bottom: 2rem;
     }
     
+    .education {
+  padding: 2rem 8rem;
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.education-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem; 
+  margin-top: 1rem;
+}
+
+.education-item {
+  text-align: center; 
+}
+
+.education-item img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.education-item img:hover {
+    transform: scale(1.05);
+  }
+    
+
+.education-item p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #333;
+}
+  
+.achievement-photos {
+  padding: 2rem 8rem;
+  text-align: center;
+}
+
+.achievement-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem; 
+  margin-top: 1rem;
+}
+
+.achievement-item {
+  text-align: center;
+}
+
+.achievement-item img {
+  width: 100%;
+  max-width: 700px; 
+  height: auto;
+}
+
+.achievement-item img:hover {
+    transform: scale(1.05);
+  }
+
+.achievement-item p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+ #backToTop {
+      display: inline-block; 
+      position: relative;
+      margin: 10px auto;
+      left: 1300px;
+      color: black;
+      border-radius: 20px;
+      padding: 10px 15px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      transition: opacity 0.3s;
+    }
+
+    body:has(:is(section, div, p):nth-of-type(n+3):in-viewport) #backToTop {
+      display: block;
+    }
+    
+    #backToTop:hover {
+      background-color: lavenderblush;
+    }
+      
     footer { 
     color: black; 
     text-align: center; 
@@ -102,23 +192,66 @@
       <ul class="navmenu">
         <li><a href="index.html">Home</a></li>
         <li><a href="profile.html">Profile</a></li>
-        <li><a href="interest.html">Interest</a></li>
         <li><a href="achievement.html">Achievement</a></li>
+        <li><a href="interest.html">Interest</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="gallery.html">Gallery</a></li>
       </ul>
     </header>
 
+    <section class="education">
+  <h2>My Education Journey</h2>
+  <div class="education-container">
+    <div class="education-item">
+      <img src="kindergarten.png" alt="Kindergarten" />
+      <p>Kindergarten : Tabika Kemas</p>
+    </div>
+    <div class="education-item">
+      <img src="primary.png" alt="Primary School" />
+      <p>Primary School : SK Semerah Padi</p>
+    </div>
+    <div class="education-item">
+      <img src="high.png" alt="High School" />
+      <p>High School : SMK Semerah Padi</p>
+    </div>
+    <div class="education-item">
+      <img src="uni.png" alt="University" />
+      <p>University : UiTM Sarawak, Kampus Samarahan</p>
+    </div>
+  </div>
+</section>
+      
     <section class="home">
     <div class="home-img">
       <img src="7.png" />
     </div>
     <div class="home-text">
       <h2> Academic Achievement </h2>
-      <h3>Dean's List</h3>
-      <p>Got Dean List for every Semester but I flop at Semester 2 with 3.4 </p>
+      <h3>Dean's List (Semester 1, 3 and 4)</h3>
     </div>
   </section>
+      
+  <section class="achievement-photos">
+  <h2>More Achievements</h2>
+  <div class="achievement-container">
+    <div class="achievement-item">
+      <img src="volunteer.png" alt="Achievement 1" />
+      <p>Exco Multimedia, Volunteer Club UiTM</p>
+    </div>
+    <div class="achievement-item">
+      <img src="debate.png" alt="Achievement 2" />
+      <p>Debate Competition</p>
+    </div>
+    <div class="achievement-item">
+      <img src="kawad.png" alt="Achievement 3" />
+      <p>Foot Drill, Police Cadet Corps</p>
+    </div>
+    <div class="achievement-item">
+      <img src="pt3.png" alt="Achievement 4" />
+      <p>Awards in SPM</p>
+    </div>
+  </div>
+</section>
       
     <section class="home">
       <div class="home-text">
@@ -131,9 +264,13 @@
       </div>
     </section>
 
+ <a href="#top" id="backToTop">Back to Top</a>
+      
 <footer>
   <p>&copy; 2024 Yanprsh.</p>
 </footer>
       
   </body>
 </html>
+      
+ 
