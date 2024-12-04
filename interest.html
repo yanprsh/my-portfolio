@@ -51,6 +51,7 @@
     .navmenu a:hover {
       transform: translateY(-5px);
     }
+     
     .home {
       width: 100%;
       height: 100vh;
@@ -83,6 +84,70 @@
       margin: 0 auto;
       text-align:center;
       }
+    
+    .photo-gallery {
+    text-align: center;
+    margin-bottom: 8rem;
+  }
+  .gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+  }
+  .gallery-container img {
+    width: 300px;
+    height: auto;
+    transition: transform 0.3s;
+  }
+  .gallery-container img:hover {
+    transform: scale(1.05);
+  }
+    
+  .current-favourites {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5rem auto;
+  max-width: 1000px;
+}
+
+.favourites-text {
+  flex: 1;
+  padding-left: 6rem; 
+  max-width: 50%;
+  white-space: nowrap;
+}
+
+.favourites-image img {
+  width: 600px;
+  height: auto;
+  margin-left: 5px;
+}
+      
+#backToTop {
+      display: inline-block; 
+      position: relative;
+      margin: 10px auto;
+      left: 1300px;
+      color: black;
+      border-radius: 20px;
+      padding: 10px 15px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      transition: opacity 0.3s;
+    }
+
+    body:has(:is(section, div, p):nth-of-type(n+3):in-viewport) #backToTop {
+      display: block;
+    }
+    
+    #backToTop:hover {
+      background-color: lavenderblush;
+    }
       
     footer { 
     color: black; 
@@ -103,8 +168,8 @@
       <ul class="navmenu">
         <li><a href="index.html">Home</a></li>
         <li><a href="profile.html">Profile</a></li>
-        <li><a href="interest.html">Interest</a></li>
         <li><a href="achievement.html">Achievement</a></li>
+        <li><a href="interest.html">Interest</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="gallery.html">Gallery</a></li>
       </ul>
@@ -127,18 +192,36 @@
         <img src="interest.png" />
       </div>
     </section>
+    
+    <section class="photo-gallery">
+  <h2>Outdoor Activities</h2>
+  <div class="gallery-container">
+    <img src="hiking.png" alt="Interest 1" />
+    <img src="hiking2.png" alt="Interest 2" />
+    <img src="picnic.png" alt="Interest 3" />
+    <img src="picnic2.png" alt="Interest 4" />
+  </div>
+</section>
       
     <section class="home-2">
-      <div class="home-text">
-        <h2>Current Favourites </h2>
-        <h3>Films - Fantastic Mr.Fox by Wes Anderson</h3>
-        <h3>Books - The Silent Patient by Alex Michaelides</h3>
-        <h3>Food - Plain Vanilla Freshcream Cake </h3>
-        <h3>Creator - Gawx Art (Youtuber)</h3>
-      </div>
-     
-    </section>
+     <div class="current-favourites">
+    <div class="favourites-image">
+      <img src="current.png" alt="Current Favourites" />
+    </div>
+    <div class="favourites-text">
+      <h2>Current Favourites</h2>
+      <p> Film: Fantastic Mr Fox by Wes Anderson </p>
+      <p> Book: The Silent patient by Alex Michaelides </p>
+      <p> Food: Plain Vanilla Freshcream Cake </p>
+      <p> Creator:
+          <a href="https://www.youtube.com/@GawxArt" target="_blank"> Gawx Art (Youtuber)</a> </p>
+    </div>
+  </div>
+</section>   
+    
 
+ <a href="#top" id="backToTop">Back to Top</a>
+      
     <footer>
   <p>&copy; 2024 Yanprsh.</p>
 </footer>
